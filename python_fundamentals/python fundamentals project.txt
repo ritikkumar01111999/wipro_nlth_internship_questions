@@ -1,0 +1,27 @@
+# python fundamentals PROJECT 1 :
+n=int(input("enter the distace in miles : "))
+if(n<3):
+    print("i suggest you to travel on bicycle to your destination ")
+elif(3<=n<300):
+    print(" i suggest motor cycle to your destinatio")
+else:
+    print("i suggest super car to your destination")
+
+# python fundamentals PROJECT 2 :
+def number_to_string(agrument):
+    if(argument==0):
+        
+        print("cost to operate one server per day : ",n*24)
+    elif(argument==1):
+        print("cost to operate one server per week : ",n*24*7)
+    elif(argument==2):
+        print("cost to operate one server per month : ",n*24*30)
+    elif(argument==3):
+        m=int(input("enter your budget : "))
+        l=m/(n*24)
+        print("you can operate for maximun days of : ",int(l))
+        
+n=float(input("enter the amount server charges per hour : "))
+print(" to know how much it costs to operate one server per day press 0, to know per week press 1, to know per month press 2,to know how many days you can operate with your bugget press 3 and enter your budget")
+argument=int(input("press the number : "))
+number_to_string(argument)
